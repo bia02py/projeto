@@ -1,23 +1,122 @@
 ﻿<!doctype html>
-
 <html lang="pt-br">
 
-
 <head>
+  <meta charset="utf-8">
+  <title>Produtos - Meu amigo cão</title>
+  <link href="estilos/principal.css" rel="stylesheet" type="text/css">
+  <style>
+    nav {
+      background-color: #C0262C;
+      border-radius: 8px;
+      padding: 10px 0;
+      margin-bottom: 20px;
+      text-align: center;
+    }
 
-<meta charset="utf-8">
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: inline-flex;
+      gap: 30px;
+    }
 
-<title>Produtos - Meu amigo cão</title>
+    nav ul li a {
+      text-decoration: none;
+      color: #FFFFFF;
+      font-size: 1.2em;
+      font-weight: bold;
+      padding: 8px 12px;
+      transition: background-color 0.3s, color 0.3s;
+      border-radius: 5px;
+    }
 
+    nav ul li a:hover {
+      background-color: #FFFFFF;
+      color: #C0262C;
+    }
 
+    section {
+      margin-bottom: 40px;
+    }
+
+    h3 {
+      color: #C0262C;
+      margin-bottom: 10px;
+    }
+
+    .produtos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .produtos img {
+      width: 200px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .produtos img:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
-
 
 <body>
 
+  <h1>Meu amigo cão - Petshop</h1>
 
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="quem-somos.html">Quem somos</a></li>
+      <li><a href="produtos.html">Produtos</a></li>
+      <li><a href="banho-e-tosa.html">Banho e Tosa</a></li>
+      <li><a href="curiosidades.html">Curiosidades</a></li>
+      <li><a href="boletim.html">Boletim</a></li>
+    </ul>
+  </nav>
 
+  <h2>Produtos</h2>
+  <p>
+    Conheça nossas rações especiais para cada fase e porte do seu cão.
+  </p>
+
+  <section>
+    <h3>Ração para Filhotes</h3>
+    <div class="produtos">
+      <img src="Multimidia/emb-grande/emb_filhote1.png" alt="Ração para Filhote 1">
+      <img src="Multimidia/emb-grande/emb_filhote2.png" alt="Ração para Filhote 2">
+    </div>
+  </section>
+
+  <section>
+    <h3>Ração para Cães de Pequeno Porte</h3>
+    <div class="produtos">
+      <img src="Multimidia/emb-grande/emb_pequeno1.png" alt="Ração para Pequeno Porte 1">
+      <img src="Multimidia/emb-grande/emb_pequeno2.png" alt="Ração para Pequeno Porte 2">
+    </div>
+  </section>
+
+  <section>
+    <h3>Ração para Cães de Médio Porte</h3>
+    <div class="produtos">
+      <img src="Multimidia/emb-grande/emb_medio1.png" alt="Ração para Médio Porte 1">
+      <img src="Multimidia/emb-grande/emb_medio2.png" alt="Ração para Médio Porte 2">
+    </div>
+  </section>
+
+  <section>
+    <h3>Ração para Cães de Grande Porte</h3>
+    <div class="produtos">
+      <img src="Multimidia/emb-grande/emb_grande1.png" alt="Ração para Grande Porte 1">
+      <img src="Multimidia/emb-grande/emb_grande2.png" alt="Ração para Grande Porte 2">
+    </div>
+  </section>
 
 </body>
-
 </html>

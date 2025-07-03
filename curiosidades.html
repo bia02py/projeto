@@ -1,131 +1,167 @@
 ﻿<!doctype html>
-
 <html lang="pt-br">
 
+<head>
+  <meta charset="utf-8">
+  <title>Curiosidades - Meu amigo cão</title>
+  <link href="estilos/principal.css" rel="stylesheet" type="text/css">
 
-<head> 
-
-<meta charset="utf-8">
-
-<title>Meu amigo cão - Petshop</title>
-
-<link href="estilos/principal.css" rel="stylesheet" type="text/css"></head>
-
-<style>
-
+  <style>
     h2 {
-    background-color: #C0262C;
-    background-image: url (multimidia/importante-saber.jpg), url (recursos/back-bolinha.gif);
-    background-repeat: no-repeat, repeat;
-    background-position: center right, center center;
-    width: 470px;
-    padding: 61px 400px 61px 100px;
-    color: #FFFFFF;
-    font-size: 2.5em;
-    letter-spacing: .1em;
+      background-color: #C0262C;
+      background-image: url(multimidia/importante-saber.jpg), url(recursos/back-bolinha.gif);
+      background-repeat: no-repeat, repeat;
+      background-position: center right, center center;
+      width: 470px;
+      padding: 61px 400px 61px 100px;
+      color: #FFFFFF;
+      font-size: 2.5em;
+      letter-spacing: .1em;
     }
 
     figure {
-    border: #C0262C solid thin;
-    border-radius: 35px 35px 0 0;
-    padding: 20px 0 0;
-    text-align: center;
+      border: #C0262C solid thin;
+      border-radius: 35px 35px 0 0;
+      padding: 20px 0 0;
+      text-align: center;
     }
 
     ul li {
-    list-style-type: none;
-    list-style-image: url (multimidia/ossinho.png);
-    list-style-position: inside;
-    margin: 30px 0;
+      list-style-type: none;
+      list-style-image: url(multimidia/ossinho.png);
+      list-style-position: inside;
+      margin: 30px 0;
     }
 
     dt {
-    color: #fff;
-    background-color: #C0262C;
-    padding: 7px;
+      color: #fff;
+      background-color: #C0262C;
+      padding: 7px;
     }
+
     dd {
-    border: thin #C0262C solid;
-    border-radius: 0 0 25px 25px;
-    margin-top: -3px;
-    margin-bottom: 30px;
-    padding: 20px 20px 0;
+      border: thin #C0262C solid;
+      border-radius: 0 0 25px 25px;
+      margin-top: -3px;
+      margin-bottom: 30px;
+      padding: 20px 20px 0;
     }
 
     ol {
-    list-style-type: none;
-    white-space: pre;
-    line-height: .9em;
-    /* definir a variável de contagem */
-    counter-reset: contador;
+      list-style-type: none;
+      white-space: pre;
+      line-height: .9em;
+      counter-reset: contador;
     }
-    ol li: before {
-    color: #999999;
-    /* incrementar a variável em 1 */
-    counter-increment: contador;
-    /* usar o número do contador como
-    conteúdo */
-    content: "Questão " counter(contador) "
-    \00BB “;
+
+    ol li:before {
+      color: #999999;
+      counter-increment: contador;
+      content: "Questão " counter(contador) " \00BB ";
     }
 
     ul li a {
-    text-decoration: none;
-    color: #C0262C;
-    font-weight: bold;
-    padding: 7px;
-    }
-    ul li a:hover {
-    text-decoration: underline;
+      text-decoration: none;
+      color: #C0262C;
+      font-weight: bold;
+      padding: 7px;
     }
 
-    dd a[target=“_blank”] {
-    text-decoration: none;
-    color: #C0262C;
-    font-weight: bold;
-    padding: 7px;
-    display: inline-block;
+    ul li a:hover {
+      text-decoration: underline;
     }
+
+    dd a[target="_blank"] {
+      text-decoration: none;
+      color: #C0262C;
+      font-weight: bold;
+      padding: 7px;
+      display: inline-block;
+    }
+
     dd a[target="_blank"]:hover {
-    text-decoration: underline;
+      text-decoration: underline;
     }
+
     dd a[href="#top"] {
-    text-decoration:none;
-    color: #C0262C;
-    font-weight: bold;
-    padding: 7px 0 7px 30px;
-    background: url (multimidia/set-voltar.png) no-repeat
-    left center;
+      text-decoration: none;
+      color: #C0262C;
+      font-weight: bold;
+      padding: 7px 0 7px 30px;
+      background: url(multimidia/set-voltar.png) no-repeat left center;
     }
+
     dd a[href="#top"]:hover {
-    text-decoration: underline;
-    background: url (multimidia/seta-voltar-hover.png) norepeat left center;
+      text-decoration: underline;
+      background: url(multimidia/seta-voltar-hover.png) no-repeat left center;
     }
 
     figcaption {
-    background-color: #C0262C;
-    padding: 7px 0;
-    color: #FFFFFF;
-    font-size: 1.5em;
+      background-color: #C0262C;
+      padding: 7px 0;
+      color: #FFFFFF;
+      font-size: 1.5em;
     }
-    
-</style>
 
+
+    /* Menu estilizado igual das outras páginas */
+    nav {
+      background-color: #C0262C;
+      border-radius: 8px;
+      padding: 10px 0;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: inline-flex;
+      gap: 30px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #FFFFFF;
+      font-size: 1.2em;
+      font-weight: bold;
+      padding: 8px 12px;
+      transition: background-color 0.3s, color 0.3s;
+      border-radius: 5px;
+    }
+
+    nav ul li a:hover {
+      background-color: #FFFFFF;
+      color: #C0262C;
+    }
+  </style>
 </head>
 
 <body>
 
-<h1>
-Qual a melhor raça de cachorros para crianças?
-</h1>
+  <h1>Meu amigo cão - Petshop</h1>
 
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="quem-somos.html">Quem somos</a></li>
+      <li><a href="produtos.html">Produtos</a></li>
+      <li><a href="banho-e-tosa.html">Banho e Tosa</a></li>
+      <li><a href="curiosidades.html">Curiosidades</a></li>
+      <li><a href="boletim.html">Boletim</a></li>
+    </ul>
+  </nav>
 
-<h2>
-Antes de mais nada é importante que você tenha em mente a resposta para algumas questões:
-</h2>
+  <h2>Qual a melhor raça de cachorros para crianças?</h2>
 
+  <h3>Antes de mais nada é importante que você tenha em mente a resposta para algumas questões:</h3>
 
-<ol>
+  <ol>
     <li>Mora em casa ou apartamento?</li>
     <li>Quer um cachorro para ser parceiro em atividades? Brincar? Terapia?</li>
     <li>Você mora no campo ou na cidade?</li>
@@ -133,76 +169,68 @@ Antes de mais nada é importante que você tenha em mente a resposta para alguma
     <li>Está disposto a cuidar do cão com frequência?</li>
     <li>É rígido com limpeza?</li>
     <li>Fica preocupado com bagunça?</li>
-    </ol>
-    
+  </ol>
 
-<h3>Veja algumas raças:</h3>
-<ul>
-<li>Bulldog</li>
-<li>Beagle</li>
-<li>Bull Terrier</li>
-<li>Collie</li>
-<li>Labrador</li>
-<li>Lhasa Apso</li>
-</ul>
-
+  <h3>Veja algumas raças:</h3>
+  <ul>
+    <li>Bulldog</li>
+    <li>Beagle</li>
+    <li>Bull Terrier</li>
+    <li>Collie</li>
+    <li>Labrador</li>
+    <li>Lhasa Apso</li>
+  </ul>
 
 <dl>
-    <hr>
-    <dt>Bulldog</dt>
-    <dd>
-    Embora a aparência do bulldog inglês possa ser um pouco
-    intimidante, ele está entre os mais gentis ....... excelentes habilidades de
-    guarda.
-    <br>
-    </dd>
+  <hr>
 
-    <hr>
-    <dt>Beagle</dt>
-    <dd>
-    O Beagle é amoroso, doce e gentil. Fica feliz de ver todos e
-    cumprimenta com a cauda .............. Outros animais domésticos
-    quando jovem.
-    <br>
-    </dd>
+  <dt>Bulldog</dt>
+  <dd style="display: flex; align-items: flex-start; gap: 15px;">
+    <img src="Multimidia/Bulldog.jpg" alt="Bulldog" style="width: 120px; height: auto; object-fit: cover; border-radius: 8px;">
+    <p>Embora a aparência do bulldog inglês possa ser um pouco intimidante, ele está entre os mais gentis... excelentes habilidades de guarda.</p>
+  </dd>
 
-    <hr>
-    <dt>Bull Terrier</dt>
-    <dd>
-    Antigamente, essa raça era considerada um gladiador feroz,
-    agora é vista como um cão dócil. O ............. é um cão educado,
-    obediente e leal. Ele se torna muito ligado aos seus donos.
-    <br>
-    </dd>
+  <hr>
 
-    <hr>
-    <dt>Collie</dt>
-    <dd>
-    O collie é um cão muito inteligente. Sensível, meigo, dócil, fácil
-    de treinar e leal, é geralmente ........... bom com crianças e protetor de
-    seus familiares.
-    <br>
-    </dd>
+  <dt>Beagle</dt>
+  <dd style="display: flex; align-items: flex-start; gap: 15px;">
+    <img src="Multimidia/Beagle.JPG" alt="Beagle" style="width: 120px; height: auto; object-fit: cover; border-radius: 8px;">
+    <p>O Beagle é amoroso, doce e gentil. Fica feliz de ver todos e cumprimenta com a cauda... outros animais domésticos quando jovem.</p>
+  </dd>
 
-    <hr>
-    <dt>Labrador</dt>
-    <dd>
-    Uma das raças mais populares nos EUA, o labrador é leal,
-    amoroso, carinhoso e paciente, ................... amigáveis e excelentes
-    com crianças e outros cães.
-    <br>
-    </dd>
+  <hr>
 
-    <hr>
-    <dt>Lhasa Apso</dt>
-    <dd>
-    Esse é um cão resistente, amigável e assertivo. Inteligente e
-    animado, é um ............... desconfiados com estranhos e podem não
-    tolerar crianças.
-    <br>
-    </dd>
-    <hr>
-    
+  <dt>Bull Terrier</dt>
+  <dd style="display: flex; align-items: flex-start; gap: 15px;">
+    <img src="Multimidia/BullTerrier.jpg" alt="Bull Terrier" style="width: 120px; height: auto; object-fit: cover; border-radius: 8px;">
+    <p>Antigamente, essa raça era considerada um gladiador feroz, agora é vista como um cão dócil... muito ligado aos seus donos.</p>
+  </dd>
+
+  <hr>
+
+  <dt>Collie</dt>
+  <dd style="display: flex; align-items: flex-start; gap: 15px;">
+    <img src="Multimidia/Collie.jpg" alt="Collie" style="width: 120px; height: auto; object-fit: cover; border-radius: 8px;">
+    <p>O collie é um cão muito inteligente. Sensível, meigo, dócil, fácil de treinar e leal... bom com crianças e protetor da família.</p>
+  </dd>
+
+  <hr>
+
+  <dt>Labrador</dt>
+  <dd style="display: flex; align-items: flex-start; gap: 15px;">
+    <img src="Multimidia/Labrador.jpg" alt="Labrador" style="width: 120px; height: auto; object-fit: cover; border-radius: 8px;">
+    <p>Uma das raças mais populares nos EUA, o labrador é leal, amoroso, carinhoso e paciente... excelentes com crianças e outros cães.</p>
+  </dd>
+
+  <hr>
+
+  <dt>Lhasa Apso</dt>
+  <dd style="display: flex; align-items: flex-start; gap: 15px;">
+    <img src="Multimidia/Lhasa.jpg" alt="Lhasa Apso" style="width: 120px; height: auto; object-fit: cover; border-radius: 8px;">
+    <p>Esse é um cão resistente, amigável e assertivo. Inteligente e animado... mas podem não tolerar crianças.</p>
+  </dd>
+
+  <hr>
 </dl>
 
 </body>
